@@ -46,7 +46,7 @@ class Board:
         for i in self.state:
             if i == 0:
                 return False
-            return True
+        return True
         
     def sign_to_printable(self, sign):
         if sign == 0:
@@ -85,6 +85,7 @@ if __name__== '__main__':
             continue
             
         if board.check_win(active_player):
+            board.print_board()
             print("Du gewinnst! GW.")
             break
             
